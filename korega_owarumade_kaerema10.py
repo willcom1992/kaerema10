@@ -12,7 +12,7 @@ root.geometry("600x600")
 print('プログラムを起動中...')
 #エクセルからメッセージを読み込んでメッセージリスト作成
 message_list = []
-wb = openpyxl.load_workbook('message_book.xlsx')
+wb = openpyxl.load_workbook('message_box.xlsx')
 sheet = wb['Sheet1']
 for i in range(2, sheet.max_row):
     message = sheet.cell(row=i, column=1).value
